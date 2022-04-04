@@ -6,9 +6,9 @@ version: '3'
                           - mysql_storage_new:/var/lib/mysql
                   restart: always
                   environment:
-                          MYSQL_ROOT_PASSWORD: rootpass
-                          MYSQL_USER: jeet
-                          MYSQL_PASSWORD: jaynesh
+                          MYSQL_ROOT_PASSWORD: urrootpass
+                          MYSQL_USER: ur_name
+                          MYSQL_PASSWORD: urpass
                           MYSQL_DATABASE: mydb
                 
                 Wordpress:
@@ -21,8 +21,8 @@ version: '3'
                           - 1234:81
                   environment:
                           WORDPRESS_DB_HOST: dbos
-                          WORDPRESS_DB_USER: jeet
-                          WORDPRESS_DB_PASSWORD: jaynesh
+                          WORDPRESS_DB_USER: ur_name
+                          WORDPRESS_DB_PASSWORD: urpass
                           WORDPRESS_DB_NAME: mydb
                   volumes: 
                          - mysql_storage_new:/var/www/html
